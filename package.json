@@ -1,7 +1,6 @@
 {
   "scripts": {
-    "start:css": "postcss css/application.css -o assets/tailwind.css",
-    "start": "npm run start:css && theme deploy && theme watch",
+    "start": "npx tailwindcss -i css/application.css -o assets/tailwind.css --watch",
     "build": "npx tailwindcss build css/application.css -o assets/tailwind.css && theme deploy"
   },
   "dependencies": {
